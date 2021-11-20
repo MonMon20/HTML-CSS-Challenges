@@ -1,29 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <label></label>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
-
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
-
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
+    <main>
+      <form>
+        <label for="name"> Enter your name:</label>
+        <input type="text" name="name" id="name" required />
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required />
+        <br />
+        <br />
+        <label for="t-shirt">Colour of t-shirt:</label>
+        <select name="t-shirt" id="t-shirt">
+          <option value="Red">Red</option>
+          <option value="Blue">Blue</option>
+          <option value="Yellow">Yellow</option>
+        </select>
+        <label for="t-shirt_size">Size of t-shirt:</label>
+        <select name="t-shirt_size" id="t-shirt_size">
+          <option value="XS">X-Small</option>
+          <option value="S">Small</option>
+          <option value="M">Medium</option>
+          <option value="L">Large</option>
+          <option value="XL">X-Large</option>
+          <option value="XXL">XX-Large</option>
+        </select>
+        <label for="delivery_date">Delivery Date:</label>
+        <input
+          type="date"
+          id="delivery_date"
+          name="delivery_date"
+          value="2021-11-20"
+          min="2021-11-20"
+          max="2021-12-18"
+        />
+        <!-- write your html here-->
+        <!-- try writing out the requirements first-->
+      </form>
+    </main>
+    <footer>
+      <!-- change to your name-->
+      <h2>By HOMEWORK SOLUTION</h2>
+    </footer>
+  </body>
 </html>
